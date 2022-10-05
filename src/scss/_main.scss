@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+// ABSTRACT
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins",
+  "abstracts/custom";
+
+// BASE
+@import "base/rest", "base/base", "base/fonts", "base/typography", "base/rest",
+  "base/icon/style.scss";
+
+@import "abstracts/helpers";
+
+// COMPONENT
+@import "components/social-links", "components/scroll",
+  "components/dropdown", "components/spinner", "components/buttons", "components/tabs";
+
+// PAGES
+@import "pages/home";
+
+// LAYOUT
+@import "layout/header", "layout/footer";
