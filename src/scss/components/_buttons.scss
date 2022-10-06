@@ -1,14 +1,46 @@
 .btn {
   border: 1px solid $secondary-color;
+
   &:hover {
     color: $color-white;
   }
+
+  &--primary {
+    background: $color-white;
+    color: #0C574F;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $color-white;
+    }
+  }
+
+
+  &--outline {
+    background-color: transparent;
+    border-color: $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      border-color: $primary-color;
+      background-color: $primary-color;
+      color: $color-white;
+    }
+  }
+
+  &--outline--white {
+    background-color: transparent;
+    border-color: $color-white;
+    color: $color-white;
+
+    &:hover {
+      border-color: $color-white;
+      background-color: $color-white;
+      color: $primary-color;
+    }
+  }
 }
 
-.utl-btn-primary {
-  background: $main-bg-gradient;
-  color: $color-white;
-}
 
 .utl-btn-secondary {
   background-color: $color-white;
@@ -21,25 +53,6 @@
   }
 }
 
-.utl-share-button {
-  width: 42px;
-  height: 42px;
-  display: inline-block;
-  border-radius: 50%;
-  border: 1px solid $primary-color;
-  color: $primary-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .icon {
-    font-size: rem(18);
-  }
-
-  &:hover {
-    color: $color-dark;
-  }
-}
 
 .utl-btn-outline-primary {
   color: $primary-color;

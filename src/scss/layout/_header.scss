@@ -1,11 +1,58 @@
 .header {
   height: 100vh;
-  background-color: $primary-color;
+  background-image: url("../img/hero.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  &__nav {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+
+    &__language {
+      margin: 0 40px;
+    }
+
+    &__search {
+      margin-inline-end: auto;
+    }
+  }
+
+  &__main {
+    height: calc(100vh - 230px);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+
+
+    &__heading {
+      font-size: rem(18);
+      color: #3EB562;
+      font-weight: 600;
+    }
+
+    &__info {
+      font-size: rem(64);
+      margin-bottom: 50px;
+      line-height: 80px;
+      margin-top: 10px;
+      color: currentColor;
+
+    }
+
+    &__description {
+      font-size: rem(20);
+      margin-bottom: 50px;
+      font-weight: 100;
+      color: currentColor;
+      line-height: 40px;
+    }
+  }
 
 }
 
 #gotToTopButton {
-  display: none;
   position: fixed;
   bottom: 20px;
   #{$left}: 30px;
@@ -17,7 +64,6 @@
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
   width: 45px;
   height: 45px;
   display: flex;

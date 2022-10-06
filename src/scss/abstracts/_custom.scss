@@ -20,16 +20,16 @@ $grid-breakpoints: (
 );
 
 // BUTTONS
-$btn-padding-y: 10px;
-$btn-padding-x: 30px;
+$btn-padding-y: 18px;
+$btn-padding-x: 20px;
 $btn-font-size: 14px;
 $btn-font-weight: bold;
+$btn-border-radius-sm: 10px;
 
-$btn-padding-y-lg: 16px;
-$btn-padding-x-lg: 99px;
-$btn-border-radius: 41px;
-$btn-border-radius-lg: 41px;
-$btn-border-radius-sm: 41px;
+$btn-padding-y-lg: 18px;
+$btn-padding-x-lg: 20px;
+$btn-border-radius: 10px;
+$btn-border-radius-lg: 10px;
 
 // //  FONT FAMILY
 $font-family-base: $fontFamily !important;

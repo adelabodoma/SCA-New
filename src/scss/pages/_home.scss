@@ -1,366 +1,53 @@
-.about-us {
-  // margin-top: 100px;
+.why-sca {
+  padding: $section-gap 0;
+  background-color: $section-background;
 
-  &__title {
-    margin-bottom: 20px;
+  &__image {
+    width: 100%;
   }
-
-  &__buttons {
-    margin-top: 40px;
-
-    .btn {
-      margin-left: 10px;
-    }
-  }
-
-  @include media-breakpoint-down(sm){
-    &__image {
-      display: none;
-    }
-  }
-}
-
-.releases {
-  margin-top: 120px;
-  text-align: center;
-
-  &__cards {
-    margin-top: 40px;
-  }
-
-  &__card {
-    margin-bottom: 30px;
-
-    &__rate {
-      color: $color-yellow;
-      padding-top: 20px;
-      margin-top: 20px;
-      border-top: 1px solid #f2f2f2;
-
-      span {
-        color: #a0a1a2;
-        display: inline-block;
-      }
-    }
-    &__price {
-      padding: 15px;
-      background-color: $color-white;
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
-      font-weight: bold;
-      color: $secondary-color;
-      position: absolute;
-      right: 0;
-      top: 20px;
-    }
-  }
-}
-
-.version {
-  margin-top: 120px;
 
   &__brief {
-    margin: 40px 0;
+    margin: 30px 0;
+    line-height: 40px;
   }
 
-  &__slider {
-    margin-top: 60px;
+  &__button {
+    margin-top: 30px;
+  }
+}
 
-    &__slide {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 30px;
-      text-align: center;
+.membership {
+  text-align: center;
+  background-color: $primary-color;
+  padding: $section-gap 0;
 
-      &__icon {
-        width: 60px;
-        height: 60px;
-      }
-
-      &__title {
-        font-size: rem(14);
-        font-weight: bold;
-        color: $primary-color;
-        margin-top: 10px;
-      }
-    }
+  * {
+    color: $color-white;
   }
 
   &__cards {
-    position: relative;
-    width: 140%;
-
-    .swiper-pagination {
-      position: static;
-    }
-  }
-
-  &__image-container {
-    position: absolute;
-    left: -60px;
-  }
-
-  @include media-breakpoint-down(sm){
-    &__image-container {
-      display: none;
-    }
-  }
-}
-
-.news {
-  margin-top: 160px;
-
-  &__cards {
-    margin-top: 40px;
-  }
-
-  &__card {
-    .card-title {
-      // color: $secondary-color;
-    }
-    margin-bottom: 20px;
-
-    &__date {
-      padding: 10px;
-      border-radius: 16px;
-      background-color: $color-white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 85px;
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translateX(-50%);
-
-      .day {
-        font-size: rem(26);
-        font-weight: bold;
-        color: $primary-color;
-      }
-
-      .month {
-        color: $primary-color;
-      }
-    }
-  }
-}
-
-.activities {
-  margin-top: 120px;
-
-  &__card {
-    box-shadow: $main-box-shadow;
-    padding: 10px;
-    margin-left: 10px;
-    border-radius: 16px;
-    cursor: pointer;
-  }
-}
-
-.media-center {
-  // padding-top: var(--section-gap);;
-  padding-top: 120px;
-
-  &__swiper__video__controls {
-    width: 150px;
-    top: unset;
-    bottom: 50px;
-  }
-
-  &__tabs {
-    &__item {
-      &__image {
-        width: 100%;
-        height: 100%;
-      }
+    &__card {
+      padding: 30px 0 ;
+      border-radius: 10px;
+      background-color: #15655c;
+      margin-top: 50px;
 
       &__icon {
-        width: 45px;
-        height: 100px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 99;
-      }
-
-      &__link {
+        font-size: rem(50);
+        color: $color-white;
+        margin-bottom: 20px;
         display: block;
-        position: relative;
-        &::after {
-          content: "";
-          background: $main-bg-gradient;
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 6px;
-          opacity: .7;
-          border-radius: 15px;
+
+        &::before {
+          color: currentColor;
         }
       }
     }
   }
 
-  &__show-more-btn {
-    margin-top: 80px;
-  }
-}
-
-.history {
-  margin-top: 120px;
-  padding: 100px;
-  background-color: #e8f0ec;
-
-  &__cards {
+  &__button {
     margin-top: 60px;
   }
 
-  &__card {
-    display: flex;
-    justify-content: center;
-    position: relative;
 
-    &__image {
-      // width: 140px;
-      // height: 140px;
-      // border-radius: 50%;
-    }
-    // &::after {
-    //   content: "";
-    //   background-image: url(../img/badg.png);
-    //   background-repeat: no-repeat;
-    //   width: 100%;
-    //   height: 300px;
-    //   display: block;
-    //   position: absolute;
-    //   top: -8px;
-    //   right: -17px;
-    // }
-  }
-
-  &__info {
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-
-    h4 {
-      color: $color-grey;
-    }
-
-    h3 {
-      font-weight: bold;
-      font-size: rem(16);
-    }
-  }
-  @include media-breakpoint-down(sm){
-    padding: 20px;
-  }
-}
-
-.app {
-  margin-top: 120px;
-
-  &__image {
-    width: 90%;
-  }
-
-  &__title {
-    font-size: rem(50);
-    line-height: 78px;
-    font-weight: bold;
-    width: 60%;
-  }
-
-  &__info {
-    margin: 20px 0;
-  }
-
-  &__more-btn {
-    margin: 40px 0;
-  }
-
-  &__download {
-    &__link {
-      &:not(:last-child) {
-        margin-left: 20px;
-      }
-    }
-  }
-
-  @include media-breakpoint-down(sm){
-    &__title{
-     width: 100%;
-     margin-top: 30px;
-     font-size: rem(23);
-    }
-  }
-}
-
-.partners {
-  padding: 80px 0;
-  margin-top: 120px;
-  color: $color-dark;
-  position: relative;
-
-  &__cards {
-    position: relative;
-  }
-
-  &__card {
-    display: flex;
-    align-items: center;
-    padding: 15px 30px;
-    &__image {
-      width: 80px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    #{$left}: 0;
-    // clip-path: polygon(49% 0, 100% 0%, 100% 100%, 0% 100%);
-    // background-color: #d2ac36;
-    background-image: url(../img/partner-bg.png);
-    background-size: cover;
-    width: 100%;
-    opacity: 0.56;
-  }
-
-  @include media-breakpoint-down(sm) {
-    &::after {
-      display: none;
-    }
-  }
-}
-
-.contact {
-  padding: 55px 0;
-  background-image: url(../img/contact-us-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: $color-white;
-
-  &__input {
-    border-radius: 30px;
-  }
-
-  &__button {
-    position: absolute;
-    left: 17px;
-    top: 1px;
-  }
-
-  @include media-breakpoint-down(sm){
-    &__be-in-touch {
-      margin-bottom: 20px;
-    }
-  }
 }

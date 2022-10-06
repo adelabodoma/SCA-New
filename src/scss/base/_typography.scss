@@ -1,0 +1,19 @@
+.heading {
+  line-height: initial;
+
+  &--1 {
+    font-size: rem(48);
+    font-weight: 500;
+  }
+
+  &--2 {
+    font-size: rem(20);
+    font-weight: 500;
+  }
+
+  &--3 {
+    font-size: rem(16);
+    font-weight: 100;
+    line-height: 30px;
+  }
+}
