@@ -25,4 +25,11 @@
       transform: translateY(-5px);
     }
   }
+
+  &--dark {
+    .icon {
+      color:  $text-color;
+      border: 1px solid $text-color;
+    }
+  }
 }

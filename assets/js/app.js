@@ -6,6 +6,17 @@ jQuery(document).ready(function ($) {
     $(".loader").fadeOut("slow");
   }, 1000);
 
+  $('#openMenu').on('click', function (e){
+    e.preventDefault()
+    $('.header__menu').css('top', '0')
+  })
+
+
+  $('#closeMenu').on('click', function (e){
+    e.preventDefault()
+    $('.header__menu').css('top', ' -100%')
+  })
+
 
 
   const topButton = document.getElementById("gotToTopButton");
