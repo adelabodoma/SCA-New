@@ -33,10 +33,8 @@ jQuery(document).ready(function ($) {
 function scrollFunction(topButton, headerNav) {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topButton.style.display = "block";
-    headerNav.style.top = "0px";
   } else {
     topButton.style.display = "none";
-    // headerNav.style.top = '60px';
   }
 
   if (
@@ -44,7 +42,6 @@ function scrollFunction(topButton, headerNav) {
     document.documentElement.scrollTop > 120
   ) {
     $(".event-details__container").css("bottom", "50px");
-    changeEventContainerPosition();
   } else {
     $(".event-details__container").css("bottom", "-250px");
   }
