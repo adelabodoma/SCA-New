@@ -51,3 +51,162 @@
 
 
 }
+
+.services {
+  padding: $section-gap 0;
+  background-color: $section-background;
+
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__card {
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: $color-white;
+    box-shadow: $main-box-shadow;
+    margin-bottom: 30px;
+
+    &__icon {
+      font-size: rem(40);
+      color: #3EB562;
+
+      &::before {
+        color: currentColor;
+      }
+
+    }
+
+    &__info {
+      margin-inline-start: 20px;
+    }
+
+    &__title {
+      font-size: rem(16);
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 28px;
+      font-weight: 100;
+    }
+  }
+}
+
+.news {
+  padding: $section-gap 0;
+  background-color: #cde2e0;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__card {
+    display: flex;
+    margin-bottom: 60px;
+
+    &__image {
+      border-radius: 10px;
+    }
+
+    &__info {
+      margin-inline-start: 20px;
+    }
+
+    &__date {
+      color: #646A69;
+      font-size: rem(14);
+      margin-bottom: 10px;
+
+      &__icon {
+        color: #3EB562;
+        margin-inline-end: 5px;
+
+        &::before {
+          color: currentColor;
+        }
+      }
+    }
+
+    &__title {
+      font-size: rem(16);
+      margin-bottom: 20px;
+      font-weight: 600;
+      display: block;
+    }
+
+    &__link {
+      display: block;
+      color: #0C574F;
+      font-weight: bold;
+    }
+  }
+}
+
+.activities {
+  background-color: $primary-color;
+  padding: $section-gap 0;
+
+  * {
+    color: $color-white;
+  }
+
+  &__card {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #15655c;
+    margin-bottom: 66px;
+
+    &__title {
+      font-size: rem(18);
+      margin-bottom: 20px;
+    }
+
+    &__date {
+      font-size: rem(14);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      font-weight: 100;
+
+      &__icon {
+        color: #3EB562;
+        margin-inline-end: 10px;
+        font-size: rem(20);
+
+        &::before {
+          color: currentColor;
+        }
+      }
+    }
+  }
+
+}
+
+.contacts {
+  padding: $section-gap 0;
+  background-color: #cde2e0;
+
+  &__card {
+    &__title {
+      font-size: rem(48);
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    &__description {
+      font-weight: 100;
+      font-size: rem(16);
+      margin-bottom: 40px;
+    }
+  }
+}

@@ -1,10 +1,11 @@
 .footer {
-  background-image: url(../img/footer-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 80px 0;
-  // margin-top: 600px; // test
-  color: $color-white;
+  background-color: #161A19;
+
+  * {
+    color: $color-white;
+  }
+
 
   &__main-title {
     font-size: 16px;
@@ -59,12 +60,12 @@
   }
 
   &__copy-rights {
-    padding-top: 20px;
-    margin-top: 20px;
-    border-top: 2px dashed $primary-color;
+    padding: 30px;
     text-align: center;
     color: $color-white;
     text-align: center;
+    background-color: #0C574F;
+    font-weight: 100;
   }
 
   @include media-breakpoint-down(md) {
