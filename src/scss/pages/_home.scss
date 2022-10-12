@@ -1,3 +1,11 @@
+%animateCard {
+  transition: $transition-base;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
 .why-sca {
   padding: $section-gap 0;
   background-color: $section-background;
@@ -40,6 +48,7 @@
       border-radius: 10px;
       background-color: #15655c;
       margin-top: 50px;
+      @extend %animateCard;
 
       &__icon {
         font-size: rem(50);
@@ -82,6 +91,7 @@
     background-color: $color-white;
     box-shadow: $main-box-shadow;
     margin-bottom: 30px;
+    @extend %animateCard;
 
     &__icon {
       font-size: rem(40);
@@ -132,6 +142,7 @@
   &__card {
     display: flex;
     margin-bottom: 60px;
+    @extend %animateCard;
 
     &__image {
       border-radius: 10px;
@@ -200,6 +211,7 @@
     border-radius: 10px;
     background-color: #15655c;
     margin-bottom: 66px;
+    @extend %animateCard;
 
     &__title {
       font-size: rem(18);

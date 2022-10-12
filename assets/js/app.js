@@ -38,7 +38,10 @@ jQuery(document).ready(function ($) {
       live: true        // default
     }
   )
-  wow.init();
+
+  setTimeout(()=>{
+    wow.init();
+  }, 1000)
 });
 
 function scrollFunction(topButton, headerNav) {
