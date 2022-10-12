@@ -16,6 +16,16 @@
     &__search {
       margin-inline-end: auto;
     }
+
+    @include media-breakpoint-down(sm) {
+      &__logo {
+        width: 140px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 
   &__main {
@@ -48,6 +58,19 @@
       color: currentColor;
       line-height: 40px;
     }
+
+    @include media-breakpoint-down(sm) {
+      &__info {
+        font-size: rem(27);
+        line-height: 30px;
+        margin-bottom: 20px;
+      }
+
+      &__description {
+        font-size: rem(17);
+        line-height: 30px;
+      }
+    }
   }
 
   &__menu {
@@ -59,6 +82,7 @@
     width: 100%;
     z-index: 999;
     transition: all 1s ease-in-out;
+    overflow-y: auto;
 
     &__nav {
       display: flex;
@@ -117,6 +141,29 @@
           &__link {
             font-size: rem(20);
             font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    background-position: 100% 0;
+
+    &__menu {
+      &__nav {
+        &__close-button {
+          padding: 5px;
+        }
+        &__items {
+          margin-top: 20px;
+          &__item {
+            padding: 10px;
+            margin-bottom: 10px;
+
+            &__link {
+              font-size: rem(16);
+            }
           }
         }
       }

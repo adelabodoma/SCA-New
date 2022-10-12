@@ -16,4 +16,14 @@
     font-weight: 100;
     line-height: 30px;
   }
+
+  @include media-breakpoint-down(sm) {
+    &--1 {
+      font-size: rem(30);
+    }
+
+    &--2 {
+      font-size: 16px;
+    }
+  }
 }
