@@ -9,12 +9,32 @@
     align-items: center;
     padding-top: 40px;
 
+    &__burger-button {
+      i {
+        font-size: rem(18);
+      }
+    }
+
     &__language {
       margin: 0 40px;
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: rem(18);
+        margin-inline-end: 5px;
+      }
     }
 
     &__search {
       margin-inline-end: auto;
+      display: flex;
+      align-items: center;
+
+      i {
+        font-size: rem(18);
+        margin-inline-end: 5px;
+      }
     }
 
     @include media-breakpoint-down(sm) {
@@ -43,20 +63,18 @@
     }
 
     &__info {
-      font-size: rem(64);
-      margin-bottom: 50px;
-      line-height: 80px;
       margin-top: 10px;
       color: currentColor;
-
+      font-size: rem(30);
+      margin-bottom: 20px;
     }
 
     &__description {
-      font-size: rem(20);
+      font-size: rem(18);
       margin-bottom: 50px;
       font-weight: 100;
       color: currentColor;
-      line-height: 40px;
+      line-height: 30px;
     }
 
     @include media-breakpoint-down(sm) {
@@ -69,6 +87,19 @@
       &__description {
         font-size: rem(17);
         line-height: 30px;
+      }
+    }
+
+    @include media-breakpoint-only(xxl) {
+      &__info {
+        font-size: rem(64);
+        margin-bottom: 50px;
+        line-height: 80px;
+      }
+
+      &__description {
+        line-height: 40px;
+        font-size: rem(20);
       }
     }
   }

@@ -37,18 +37,32 @@
   text-align: center;
   background-color: $primary-color;
   padding: $section-gap 0;
+  background-image: url(../img/section-1-bg.png);
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
 
   * {
     color: $color-white;
   }
 
   &__cards {
+    margin-top: 50px;
+
+    &__wrapper {
+      //height: 100%;
+    }
+
     &__card {
-      padding: 30px 0 ;
+      padding: 30px 20px;
       border-radius: 10px;
       background-color: #15655c;
-      margin-top: 50px;
-      @extend %animateCard;
+      height: 100%;
+      transition: all .5s ease-in-out;
+      border-top: 3px solid transparent;
+
+      &__heading {
+        font-weight: 100;
+      }
 
       &__icon {
         font-size: rem(50);
@@ -58,6 +72,16 @@
 
         &::before {
           color: currentColor;
+        }
+      }
+
+      &:hover {
+        background-color: $color-white;
+        cursor: pointer;
+        border-color: #3EB562;
+
+        .membership__cards__card__heading, .membership__cards__card__icon {
+          color: $text-color;
         }
       }
     }
@@ -84,14 +108,22 @@
     margin-bottom: 60px;
   }
 
+  &__wrapper {
+    margin-bottom: 30px;
+  }
+
   &__card {
     display: flex;
     padding: 30px;
     border-radius: 10px;
     background-color: $color-white;
     box-shadow: $main-box-shadow;
-    margin-bottom: 30px;
     @extend %animateCard;
+    height: 100%;
+    background-image: url(../img/card-bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+
 
     &__icon {
       font-size: rem(40);
@@ -117,6 +149,10 @@
       line-height: 28px;
       font-weight: 100;
     }
+
+    &:hover {
+      background-position: left bottom;
+    }
   }
 
   @include media-breakpoint-down(sm) {
@@ -131,6 +167,9 @@
 .news {
   padding: $section-gap 0;
   background-color: #cde2e0;
+  background-image: url(../img/section-1-bg.png);
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
 
   &__header {
     display: flex;
@@ -143,6 +182,7 @@
     display: flex;
     margin-bottom: 60px;
     @extend %animateCard;
+    border-radius: 10px;
 
     &__image {
       border-radius: 10px;
@@ -150,6 +190,7 @@
 
     &__info {
       margin-inline-start: 20px;
+      padding: 10px;
     }
 
     &__date {
@@ -179,6 +220,10 @@
       color: #0C574F;
       font-weight: bold;
     }
+
+    &:hover {
+      background-color: $color-white;
+    }
   }
 
   @include media-breakpoint-down(sm) {
@@ -201,16 +246,19 @@
 .activities {
   background-color: $primary-color;
   padding: $section-gap 0;
+  background-image: url(../img/section-1-bg.png);
+  background-repeat: no-repeat;
+  background-position: 95% 10%;
 
   * {
     color: $color-white;
   }
 
   &__card {
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     background-color: #15655c;
-    margin-bottom: 66px;
+    margin-bottom: 30px;
     @extend %animateCard;
 
     &__title {
@@ -235,6 +283,15 @@
         }
       }
     }
+
+
+    &:hover {
+      background-color: $color-white;
+
+      *:not(i) {
+        color: $text-color;
+      }
+    }
   }
 
   @include media-breakpoint-down(sm) {
@@ -246,6 +303,9 @@
 .contacts {
   padding: $section-gap 0;
   background-color: #cde2e0;
+  background-image: url(../img/section-1-bg.png);
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
 
   &__card {
     &__title {
