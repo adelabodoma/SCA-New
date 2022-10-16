@@ -38,6 +38,9 @@
     }
 
     @include media-breakpoint-down(sm) {
+      &__language  {
+        margin: 0 15px;
+      }
       &__logo {
         width: 140px;
 
