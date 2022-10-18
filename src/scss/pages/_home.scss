@@ -168,6 +168,7 @@
     overflow: hidden;
     position: relative;
     min-height: 208px;
+    @extend %animateCard;
 
     &:before {
       background-image: url(../img/shape.png);
@@ -212,14 +213,13 @@
     &:hover {
       cursor: pointer;
 
-      &::before {
-        //transform: translate(-110%, 30%) rotate(90deg);
-        transform: rotate(90deg);
-        #{$left}: unset;
-        #{$right}: 0;
-        bottom: 0;
-        top: unset;
-      }
+      //&::before {
+      //  transform: rotate(90deg);
+      //  #{$left}: unset;
+      //  #{$right}: 0;
+      //  bottom: 0;
+      //  top: unset;
+      //}
     }
   }
 
@@ -371,12 +371,12 @@
     &:hover {
       background-color: $color-white;
 
-      &::before {
-        transform: rotate(180deg);
-        #{$left}: unset;
-        #{$right}: 0;
-
-      }
+      //&::before {
+      //  transform: rotate(180deg);
+      //  #{$left}: unset;
+      //  #{$right}: 0;
+      //
+      //}
 
       *:not(i) {
         color: $text-color;
@@ -405,9 +405,11 @@
     }
 
     &__description {
-      font-weight: 100;
       font-size: rem(16);
       margin-bottom: 40px;
+      font-weight: 500;
+      color: #434847;
+      line-height: 30px;
     }
   }
 

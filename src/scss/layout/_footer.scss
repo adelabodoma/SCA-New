@@ -27,6 +27,13 @@
   }
 
   &__list {
+    &__downloads {
+      display: flex;
+      align-items: center;
+      a {
+        margin-inline-end: 10px;
+      }
+    }
     &__item {
       margin-bottom: 20px;
 
