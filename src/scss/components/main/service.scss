@@ -1,0 +1,35 @@
+.co-service {
+
+  display: flex;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: $color-white;
+  box-shadow: $main-box-shadow;
+  margin-bottom: 30px;
+  @extend %animateCard;
+
+  &__icon {
+    font-size: rem(40);
+    color: #3EB562;
+
+    &::before {
+      color: currentColor;
+    }
+
+  }
+
+  &__info {
+    margin-inline-start: 20px;
+  }
+
+  &__title {
+    font-size: rem(16);
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 100;
+  }
+}

@@ -12,7 +12,10 @@
 
 // COMPONENT
 @import "components/social-links", "components/scroll",
-  "components/dropdown", "components/spinner", "components/buttons", "components/tabs";
+"components/dropdown", "components/spinner",
+"components/buttons", "components/tabs",
+"components/main/member", "components/main/service",
+"components/main/news", "components/main/activity", "components/main/section-header";
 
 // PAGES
 @import "pages/home";

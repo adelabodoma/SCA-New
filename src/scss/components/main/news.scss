@@ -1,0 +1,49 @@
+.co-news {
+  display: flex;
+  margin-bottom: 60px;
+  @extend %animateCard;
+
+  &__image {
+    border-radius: 10px;
+  }
+
+  &__info {
+    margin-inline-start: 20px;
+  }
+
+  &__date {
+    color: #646A69;
+    font-size: rem(14);
+    margin-bottom: 10px;
+
+    &__icon {
+      color: #3EB562;
+      margin-inline-end: 5px;
+
+      &::before {
+        color: currentColor;
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(16);
+    margin-bottom: 20px;
+    font-weight: 600;
+    display: block;
+  }
+
+  &__link {
+    display: block;
+    color: #0C574F;
+    font-weight: bold;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+
+    &__image {
+      margin-bottom: 20px;
+    }
+  }
+}

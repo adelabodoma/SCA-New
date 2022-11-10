@@ -1,0 +1,30 @@
+.co-activity {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #15655c;
+  margin-bottom: 66px;
+  @extend %animateCard;
+
+  &__title {
+    font-size: rem(18);
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    font-size: rem(14);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+
+    &__icon {
+      color: #3EB562;
+      margin-inline-end: 10px;
+      font-size: rem(20);
+
+      &::before {
+        color: currentColor;
+      }
+    }
+  }
+}

@@ -42,27 +42,6 @@
     color: $color-white;
   }
 
-  &__cards {
-    &__card {
-      padding: 30px 0 ;
-      border-radius: 10px;
-      background-color: #15655c;
-      margin-top: 50px;
-      @extend %animateCard;
-
-      &__icon {
-        font-size: rem(50);
-        color: $color-white;
-        margin-bottom: 20px;
-        display: block;
-
-        &::before {
-          color: currentColor;
-        }
-      }
-    }
-  }
-
   &__button {
     margin-top: 60px;
   }
@@ -76,55 +55,8 @@
   padding: $section-gap 0;
   background-color: $section-background;
 
-
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 60px;
-  }
-
-  &__card {
-    display: flex;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: $color-white;
-    box-shadow: $main-box-shadow;
-    margin-bottom: 30px;
-    @extend %animateCard;
-
-    &__icon {
-      font-size: rem(40);
-      color: #3EB562;
-
-      &::before {
-        color: currentColor;
-      }
-
-    }
-
-    &__info {
-      margin-inline-start: 20px;
-    }
-
-    &__title {
-      font-size: rem(16);
-      margin-bottom: 10px;
-    }
-
-    &__description {
-      font-size: 14px;
-      line-height: 28px;
-      font-weight: 100;
-    }
-  }
-
   @include media-breakpoint-down(sm) {
     padding: 20px 0;
-
-    &__header {
-      flex-direction: column;
-    }
   }
 }
 
@@ -132,69 +64,8 @@
   padding: $section-gap 0;
   background-color: #cde2e0;
 
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 60px;
-  }
-
-  &__card {
-    display: flex;
-    margin-bottom: 60px;
-    @extend %animateCard;
-
-    &__image {
-      border-radius: 10px;
-    }
-
-    &__info {
-      margin-inline-start: 20px;
-    }
-
-    &__date {
-      color: #646A69;
-      font-size: rem(14);
-      margin-bottom: 10px;
-
-      &__icon {
-        color: #3EB562;
-        margin-inline-end: 5px;
-
-        &::before {
-          color: currentColor;
-        }
-      }
-    }
-
-    &__title {
-      font-size: rem(16);
-      margin-bottom: 20px;
-      font-weight: 600;
-      display: block;
-    }
-
-    &__link {
-      display: block;
-      color: #0C574F;
-      font-weight: bold;
-    }
-  }
-
   @include media-breakpoint-down(sm) {
     padding: 20px 0;
-
-    &__header {
-      flex-direction: column;
-    }
-
-    &__card {
-      flex-direction: column;
-
-      &__image {
-        margin-bottom: 20px;
-      }
-    }
   }
 }
 
@@ -204,37 +75,6 @@
 
   * {
     color: $color-white;
-  }
-
-  &__card {
-    padding: 30px;
-    border-radius: 10px;
-    background-color: #15655c;
-    margin-bottom: 66px;
-    @extend %animateCard;
-
-    &__title {
-      font-size: rem(18);
-      margin-bottom: 20px;
-    }
-
-    &__date {
-      font-size: rem(14);
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      font-weight: 100;
-
-      &__icon {
-        color: #3EB562;
-        margin-inline-end: 10px;
-        font-size: rem(20);
-
-        &::before {
-          color: currentColor;
-        }
-      }
-    }
   }
 
   @include media-breakpoint-down(sm) {
