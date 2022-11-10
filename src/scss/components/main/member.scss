@@ -44,8 +44,13 @@
       display: none;
     }
 
-    .membership__cards__card__heading, .membership__cards__card__icon {
+    .co-member__heading, .co-member__icon {
       color: $text-color;
     }
+  }
+
+  @include media-breakpoint-down(sm) {
+   margin-bottom: 30px;
+    height: auto;
   }
 }
