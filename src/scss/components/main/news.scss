@@ -2,6 +2,7 @@
   display: flex;
   margin-bottom: 60px;
   @extend %animateCard;
+  border-radius: 10px;
 
   &__image {
     border-radius: 10px;
@@ -9,6 +10,7 @@
 
   &__info {
     margin-inline-start: 20px;
+    padding: 10px;
   }
 
   &__date {
@@ -39,11 +41,7 @@
     font-weight: bold;
   }
 
-  @include media-breakpoint-down(sm) {
-    flex-direction: column;
-
-    &__image {
-      margin-bottom: 20px;
-    }
+  &:hover {
+    background-color: $color-white;
   }
 }

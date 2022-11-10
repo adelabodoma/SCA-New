@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?1qrkum');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?1qrkum#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?1qrkum') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?1qrkum') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?1qrkum##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yf4omx');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yf4omx#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?yf4omx') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?yf4omx') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?yf4omx##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,96 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-sms {
+  &:before {
+    content: $icon-sms; 
+  }
+}
+.icon-call {
+  &:before {
+    content: $icon-call; 
+  }
+}
+.icon-Illusrutions-1 {
+  &:before {
+    content: $icon-Illusrutions-1; 
+  }
+}
+.icon-training {
+  &:before {
+    content: $icon-training; 
+  }
+}
+.icon-moneys {
+  &:before {
+    content: $icon-moneys; 
+  }
+}
+.icon-briefcase {
+  &:before {
+    content: $icon-briefcase; 
+  }
+}
+.icon-users-group1 {
+  &:before {
+    content: $icon-users-group1; 
+  }
+}
+.icon-messages {
+  &:before {
+    content: $icon-messages; 
+  }
+}
+.icon-profile {
+  &:before {
+    content: $icon-profile; 
+  }
+}
+.icon-hummer {
+  &:before {
+    content: $icon-hummer; 
+  }
+}
+.icon-castle {
+  &:before {
+    content: $icon-castle; 
+  }
+}
+.icon-sea {
+  &:before {
+    content: $icon-sea; 
+  }
+}
+.icon-building-1 {
+  &:before {
+    content: $icon-building-1; 
+  }
+}
+.icon-bricks {
+  &:before {
+    content: $icon-bricks; 
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left; 
+  }
+}
+.icon-burger-menu {
+  &:before {
+    content: $icon-burger-menu; 
+  }
+}
+.icon-Earth {
+  &:before {
+    content: $icon-Earth; 
+  }
+}
+.icon-Search {
+  &:before {
+    content: $icon-Search; 
+  }
+}
 .icon-profile-converted {
   &:before {
     content: $icon-profile-converted; 
@@ -37,9 +127,9 @@
     content: $icon-arrow-left1; 
   }
 }
-.icon-Earth {
+.icon-Earth1 {
   &:before {
-    content: $icon-Earth; 
+    content: $icon-Earth1; 
   }
 }
 .icon-Earth-converted {

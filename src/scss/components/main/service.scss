@@ -1,12 +1,29 @@
-.co-service {
-
+.co-service  {
   display: flex;
   padding: 30px;
   border-radius: 10px;
   background-color: $color-white;
   box-shadow: $main-box-shadow;
-  margin-bottom: 30px;
+  height: 100%;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  min-height: 208px;
   @extend %animateCard;
+
+  &:before {
+    background-image: url(../img/shape.png);
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 280px;
+    content: "";
+    position: absolute;
+    #{$left}: 0px;
+    top: -80px;
+    transition: all .5s ease-in-out;
+    transform: translate(44px, -17px) rotate(-90deg);
+
+  }
 
   &__icon {
     font-size: rem(40);
@@ -25,11 +42,24 @@
   &__title {
     font-size: rem(16);
     margin-bottom: 10px;
+    font-weight: bold;
   }
 
   &__description {
     font-size: 14px;
     line-height: 28px;
-    font-weight: 100;
+    font-weight: 400;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    //&::before {
+    //  transform: rotate(90deg);
+    //  #{$left}: unset;
+    //  #{$right}: 0;
+    //  bottom: 0;
+    //  top: unset;
+    //}
   }
 }
