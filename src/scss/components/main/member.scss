@@ -15,9 +15,10 @@
     height: 180px;
     content: "";
     position: absolute;
-    #{$left}: 0px;
-    top: 0;
-    transform: translate(44px, -17px) rotate(-90deg);
+    #{$left}: -40px;
+    top: -80px;
+    transform: rotate(-90deg);
+    opacity: .6;
   }
 
   &__heading {
@@ -41,7 +42,10 @@
     border-color: #3EB562;
 
     &::before {
-      display: none;
+      #{$left}: unset;
+      #{$right}: -40px;
+      transform: rotate(-200deg);
+      opacity: .6;
     }
 
     .co-member__heading, .co-member__icon {

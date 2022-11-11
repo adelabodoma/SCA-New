@@ -17,7 +17,7 @@
     #{$left}: 0px;
     top: 0;
     transform: rotate(-90deg);
-    transition: all .5s ease-in-out;
+    opacity: .6;
   }
 
   &__title {
@@ -47,12 +47,12 @@
   &:hover {
     background-color: $color-white;
 
-    //&::before {
-    //  transform: rotate(180deg);
-    //  #{$left}: unset;
-    //  #{$right}: 0;
-    //
-    //}
+    &::before {
+      #{$left}: unset;
+      #{$right}: -20px;
+      transform: rotate(-180deg);
+      opacity: .6;
+    }
 
     *:not(i) {
       color: $text-color;
