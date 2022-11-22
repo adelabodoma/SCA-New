@@ -11,10 +11,11 @@
 @import "abstracts/helpers";
 
 // COMPONENT
-@import "components/social-links", "components/scroll",
-"components/dropdown", "components/buttons", "components/tabs", "components/multimedia","components/spinner",
+@import "components/shared/social-links", "components/shared/scroll",
+"components/shared/dropdown", "components/shared/buttons", "components/shared/tabs", "components/shared/multimedia", "components/shared/spinner",
 "components/main/member", "components/main/service",
-"components/main/news", "components/main/activity", "components/main/section-header";
+"components/main/news", "components/main/activity",
+"components/main/section-header", 'components/shared/scroll-top', 'components/shared/breadcrumb';
 
 // PAGES
 @import "pages/home";

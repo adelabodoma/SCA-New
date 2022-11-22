@@ -1,0 +1,44 @@
+.co-breadcrumb {
+  margin-bottom: 30px;
+  color: $color-white;
+  background-image: url(../../assets/img/About/header.png);
+  background-size: cover;
+  text-align: center;
+  padding: 60px 0;
+
+  &__items {
+    @include flex(center, center);
+
+    &__item {
+      @include flex(center, center);
+
+      &:not(:last-child) {
+        position: relative;
+
+        &::after {
+          @include addIcon($icon-arrow-Left_2, 16px);
+          display: block;
+          padding: 0 10px;
+          color: #88958E;
+        }
+      }
+
+      &:first-child {
+        color: #88958E;
+      }
+
+      &__link {
+        font-size: rem(14);
+        font-weight: 400;
+        display: block;
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(36);
+    font-weight: 600;
+    color: $color-white;
+    margin-top: 20px;
+  }
+}

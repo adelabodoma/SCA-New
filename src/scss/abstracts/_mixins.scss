@@ -25,3 +25,11 @@
   -moz-osx-font-smoothing: grayscale;
   content: $name;
 }
+
+
+@mixin flex($align, $justify:flex-start, $direction:row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
