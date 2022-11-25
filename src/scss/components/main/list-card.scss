@@ -1,0 +1,23 @@
+.co-list-card {
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #CBD1D0;
+  text-align: center;
+
+  &__icon {
+    color: $color-light-green;
+    margin-bottom: 20px;
+    font-size: rem(40);
+    display: block;
+  }
+
+  &__title {
+    font-size: rem(16);
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}

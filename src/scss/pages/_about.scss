@@ -1,0 +1,22 @@
+.management {
+  margin: 100px 0;
+  padding-bottom: 300px;
+
+  &__container {
+    background-image: url(../images/About/about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__card {
+    text-align: center;
+    transform: translateY(300px);
+    .co-card {
+      padding: 30px;
+    }
+
+    &__items {
+      margin-top: 70px;
+    }
+  }
+}

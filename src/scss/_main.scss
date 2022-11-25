@@ -15,10 +15,11 @@
 "components/shared/dropdown", "components/shared/buttons", "components/shared/tabs", "components/shared/multimedia", "components/shared/spinner",
 "components/main/member", "components/main/service",
 "components/main/news", "components/main/activity",
-"components/main/section-header", 'components/shared/scroll-top', 'components/shared/breadcrumb';
+"components/main/section-header", 'components/shared/scroll-top',
+'components/shared/breadcrumb', 'components/main/card', 'components/main/list-card';
 
 // PAGES
-@import "pages/home";
+@import "pages/home", 'pages/about';
 
 // LAYOUT
 @import "layout/header", "layout/footer";

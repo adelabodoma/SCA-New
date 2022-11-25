@@ -1,6 +1,6 @@
 .header {
   height: 100vh;
-  background-image: url("../img/hero.png");
+  background-image: url("../images/Home/hero.png");
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -231,6 +231,13 @@
 
     .header__top {
       background-color: $primary-color;
+    }
+  }
+
+  &--no-margin {
+    margin-bottom: 0!important;
+    .co-breadcrumb {
+      margin-bottom: 0;
     }
   }
 
