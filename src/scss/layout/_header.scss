@@ -222,7 +222,7 @@
     background-image: none;
 
     @include media-breakpoint-down(sm){
-      height: 250px;
+      min-height: 250px;
     }
 
     .header__nav {

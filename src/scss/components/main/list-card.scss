@@ -3,6 +3,7 @@
   border-radius: 10px;
   border: 1px solid #CBD1D0;
   text-align: center;
+  height: 100%;
 
   &__icon {
     color: $color-light-green;
@@ -19,5 +20,11 @@
 
   &__link {
     text-decoration: underline;
+  }
+
+  @include media-breakpoint-down(sm){
+   @at-root .management__card__items__item {
+     margin-bottom: 20px;
+   }
   }
 }

@@ -1,0 +1,35 @@
+.co-director {
+  text-align: center;
+
+  @at-root .co-card {
+    height: 100%;
+  }
+
+  &__image {
+    margin-bottom: 30px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: rem(18);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: rem(16);
+    font-weight: 400;
+    color: $primary-color;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    font-size: rem(16);
+    font-weight: 400;
+    color: #646A69;
+    padding-bottom: 30px;
+  }
+
+}
