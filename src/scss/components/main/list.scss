@@ -1,0 +1,22 @@
+.co-list {
+  &__item {
+    @include flex(center, flex-start);
+    margin-bottom: 20px;
+
+    &__text {
+      font-size: rem(16);
+      font-weight: 400;
+      margin-inline-start: 10px;
+    }
+
+    &__icon {
+      color: $color-light-green;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: rgba(62, 181, 98, 0.1);
+      @include flex(center, center);
+      font-size: rem(20);
+    }
+  }
+}

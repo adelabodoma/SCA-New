@@ -18,10 +18,10 @@
 "components/main/section-header", 'components/shared/scroll-top',
 'components/shared/breadcrumb', 'components/main/card',
 'components/main/list-card', 'components/main/director',
-'components/main/divider';
+'components/main/divider', 'components/main/site', 'components/main/list';
 
 // PAGES
-@import "pages/home", 'pages/about', 'pages/manager-word', 'pages/chart';
+@import "pages/home", 'pages/about', 'pages/manager-word', 'pages/chart', 'pages/program', 'pages/privacy';
 
 // LAYOUT
 @import "layout/header", "layout/footer";
