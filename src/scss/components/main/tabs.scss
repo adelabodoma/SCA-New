@@ -1,0 +1,42 @@
+.co-tabs {
+  &__items {
+    @include flex(center, flex-start);
+    border-bottom: none;
+    padding: 10px;
+    background-color: $color-light-grey-1;
+    border-radius: 50px;
+
+    &__item {
+      &:not(:last-child) {
+        margin-inline-end: 20px;
+      }
+
+      &__link {
+        display: block!important;
+        padding: 15px 40px!important;
+        border-radius: 50px!important;
+        text-align: center!important;
+        font-size: rem(16)!important;
+        font-weight: 600!important;
+
+        &.active {
+          background-color: $primary-color!important;
+          color: $color-white!important;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm){
+      flex-direction: column;
+      border-radius: 20px;
+
+      &__item {
+        width: 100%;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 40px;
+  }
+}
