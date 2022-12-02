@@ -1,0 +1,46 @@
+.co-album {
+  &__image {
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: 450px
+  }
+
+  &__title {
+    font-size: rem(16);
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  &__description {
+    font-size: rem(15);
+    margin-bottom: 20px;
+    color: #646A69;
+    line-height: 1.7;
+  }
+
+
+  &__link {
+    display: block;
+    color: #0C574F;
+    font-weight: bold;
+  }
+
+  &__count {
+    font-size: rem(11);
+    color: #434847;
+    @include flex(center, flex-start);
+
+    &__text {
+      color: currentColor;
+      margin-inline-start: 10px;
+      display: inline-block;
+    }
+
+    &__icon {
+      color: $color-light-green;
+      font-size: rem(20);
+    }
+  }
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../assets/css/animate.min.css"/>
+    <link rel="stylesheet" href="../assets/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.css"/>
+    <link rel="stylesheet" href="../assets/css/style-rtl.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <title>SCA - News Details</title>
+</head>
+
+<body>
+<button class="co-scroll-top" id="gotToTopButton" title="Go to top">
+    <i class="icon icon-down-arrow"></i>
+</button>
+
+<div class="loader">
+    <div class="loader__item">
+        <img src="../assets/images/Home/logo.png" alt="Logo"/>
+        <div></div>
+    </div>
+</div>
+<!-- HEADER SECTION START -->
+<header class="header internal-pages header--no-margin">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__nav">
+                <a href="" class="header__nav__burger-button" id="openMenu">
+                    <i class="icon icon-burger-menu"></i>
+                </a>
+
+                <a href="" class="header__nav__language">
+                    <i class="icon icon-Earth"></i>
+                    <span>العربيه</span>
+                </a>
+
+
+                <a href="" class="header__nav__search">
+                    <i class="icon icon-Search"></i>
+                    <span> البحث</span>
+                </a>
+
+
+                <a href="" class="header__nav__logo">
+                    <img src="../assets/images/Home/logo.png" alt="Logo">
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        <div class="container">
+            <div class="header__menu__nav">
+                <a href="" class="header__menu__nav__close-button" id="closeMenu">
+                    <i class="icon icon-close"></i>
+                </a>
+                <a href="" class="header__menu__nav__language">
+                    العربيه
+                </a>
+
+                <a href="" class="header__menu__nav__search">
+                    البحث
+                </a>
+                <a href="" class="header__nav__logo">
+                    <img src="../assets/images/Home/logo-dark.png" alt="Logo">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="header__menu__nav__items">
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                عن الهيئة
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                الخطة الإستراتيجية
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                المركز الإعلامي
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                عضوية الهيئة
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                الخدمات الإلكترونية
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                تواصل معنا
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="header__menu__nav__items">
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                الخدمات الحديثة
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                مقاول
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                بوابة التوظيف
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                تسجيل الدخول للموظفين
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                مركز المعلومات
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                دليل الخدمات
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="header__menu__nav__items">
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                منصة المشاريع
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                الخدمات الاستشارية
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                تقييم المقاولين
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                مدراء المشاريع
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                برنامج توطين
+                            </a>
+                        </li>
+                        <li class="header__menu__nav__items__item">
+                            <a href="" class="header__menu__nav__items__item__link">
+                                العقود النموذجية الالكترونية
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <ul class="social-links social-links--dark mt-4 py-5">
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- HEADER SECTION END -->
+
+
+<!--  NEWS SECTION START   -->
+<section class="co-details m-t-60">
+    <div class="container">
+        <div class="co-card">
+            <h2 class="co-details__date">
+                <i class="icon icon-calender co-details__date__icon"></i>
+                <span class="d-inline-block">15 سبتمبر 2021</span>
+            </h2>
+            <h3 class="co-details__title">
+                رئيس الهيئة السعودية للمقاولين ينوه بقرار تطبيق أحكام المادتين 13 و14 من نظام المنافسات والمشتريات
+                الحكومية
+            </h3>
+            <img class="co-details__image" src="../assets/images/GENERAL/news-details.png" alt="News Details">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p class="co-details__heading">
+                        رفع رئيس مجلس إدارة الهيئة السعودية للمقاولين المهندس زكريا بن عبدالرحمن العبدالقادر، شكره
+                        وتقديره لمقام خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز آل سعود ولصاحب السمو الملكي الأمير
+                        محمد بن سلمان بن عبدالعزيز ولي العهد رئيس مجلس الوزراء -حفظهما الله- ومعالي وزير المالية الأستاذ
+                        محمد بن عبدالله الجدعان؛ بمناسبة صدور قرار تطبيق أحكام المادتين 13 و14 من نظام المنافسات
+                        والمشتريات الحكومية، بما من شأنه الإسهام في دعم قطاع المقاولات.</p>
+
+                    <p class="co-details__heading">
+                        وأوضح المهندس العبدالقادر، أن القرار يدعم زيادة التنافسية والاستدامة في قطاع المقاولات، وسيكون
+                        له أثرًا إيجابيًا في ممارسة الأعمال بجودة عالية مع استراتيجية الهيئة بما يتواءم مع رؤية المملكة
+                        2030.</p>
+                    <p class="co-details__heading">
+                        وقال إن القرار يعزز فرص النزاهة والمنافسة، وتحقيق المساواة، وتوفير معاملة عادلة للمتنافسين؛
+                        تحقيقًا لمبدأ تكافؤ الفرص وإيجاد الحلول لكافة التحديات في قطاع المقاولات، وتشجيع الإبداع وتوفير
+                        التسهيلات والحماية للقطاع من أجل تطويره والنهوض به.</p>
+                    <p class="co-details__heading">
+
+
+                        وثمّن رئيس الهيئة الجهود المبذولة في التنسيق بين وزارة المالية والهيئة من خلال متابعة التعديلات
+                        المقترحة لنظام المنافسات والمشتريات الحكومية ولائحته التنفيذية بما من شأنه دعم قطاع المقاولات
+                        والأخذ
+                        بتوصيات الهيئة في هذا الجانب.
+                    </p>
+                    <p class="co-details__heading">
+                        الجدير بالذكر ان القرار " يشترط لخضوع طلبات تعديل اسعار العقود بموجب المادة ( الثامنة والستين )
+                        من النظام للاعمال والمشتريات التي طرحت منافساتها او ابرمت عقودها قبل نفاذ نظام المنافسات
+                        والمشريات الحكومية الصادر بالمرسوم الملكي رقم (م/128) وتاريخ 13/11/1440 هـ ان يكون النظام مطبقا
+                        على الجهة طرف التعاقد والتعاقدات محل طلب الزيادة حين رفع الجهة الحكومية للمستندات المتعلقة
+                        بالمطالبة الى اللجنة المنصوص عليها في المادة ( السادسة والثمانين ) من النظام، وان المطالبة
+                        بتعديل الاسعار لم تقيد لدى اللجنة المنصوص عليها في المادة ( الثامنة والسبعين ) من نظام المنافسات
+                        والمشتريات الحكومية الصادر بالمرسوم الملكي رقم (م/58) وتاريخ 4/9/1427 هـ" ، وطبقًا للقرار، تطبق
+                        أحكام المادتين (13) و(14) من نظام المنافسات والمشتريات الحكومية الصادر بموجب المرسوم الملكي
+                        (م/128) وتاريخ 13/11/1440هـ على الأعمال والمشتريات التي طرحت أو أبرمت عقودها قبل نفاذه لتحقيق
+                        غايات هذا القرار.</p>
+                    <p class="co-details__heading">
+
+                        يُذكر أنّ الهيئة السعودية للمقاولين تعنى بتنظيم وتطوير صناعة المقاولات، وبناء الكفاءات الإنتاجية
+                        المميزة، كما تعمل على إيجاد الحلول الملائمة للتحديّات والأزمات التي تواجه المقاولين، بالإضافة
+                        إلى
+                        تقديم العديد من الخدمات الإلكترونية من خلال منصة مقاول والتي تساعد على تطوير القطاع والعاملين
+                        فيه.
+                    </p>
+
+                    <div class="co-details__share-article">
+                        <h2 class="co-details__share-article__heading">شارك المقال:</h2>
+                        <ul class="social-links social-links--dark">
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <h2 class="news-page__title">أخبار متعلقة</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="co-news m-b-30">
+                        <img class="co-news__image" src="../assets/images/Home/news.png" alt="News">
+                        <div class="co-news__info">
+                            <h2 class="co-news__date">
+                                <i class="icon icon-calender co-news__date__icon"></i>
+                                <span class="d-inline-block">15 سبتمبر 2021</span>
+                            </h2>
+                            <a href="" class="co-news__title">
+                                هيئة المقاولين وجمعية إدارة المرافق السعودية تُقيم فعالية بمناسبة اليوم العالمي لإدارة
+                                المرافق
+                            </a>
+                            <a href="" class="co-news__link">
+                                معرفة المزيد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="co-news m-b-30">
+                        <img class="co-news__image" src="../assets/images/Home/news.png" alt="News">
+                        <div class="co-news__info">
+                            <h2 class="co-news__date">
+                                <i class="icon icon-calender co-news__date__icon"></i>
+                                <span class="d-inline-block">15 سبتمبر 2021</span>
+                            </h2>
+                            <a href="" class="co-news__title">
+                                هيئة المقاولين وجمعية إدارة المرافق السعودية تُقيم فعالية بمناسبة اليوم العالمي لإدارة
+                                المرافق
+                            </a>
+                            <a href="" class="co-news__link">
+                                معرفة المزيد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <a href="" class="btn btn--outline">عرض المزيد</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  NEWS SECTION START   -->
+
+<!--  CONTACTS SECTION START  -->
+<section class="contacts wow fadeInUp" data-wow-duration="1s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="contacts__image" src="../assets/images/Home/contacts.png" alt="Contacts">
+            </div>
+            <div class="col-md-6">
+                <div class="contacts__card">
+                    <h2 class="contacts__card__title">بناء المستقبل بثقة</h2>
+                    <p class="contacts__card__description">
+                        تنظيم قطاع البناء من خلال تطوير وتنفيذ معايير تنظيمية عالية الجودة وتشجيع الابتكار تطوير
+                        المهارات وتحسين التواصل في القطاع وتحقيق الاستدامة الاقتصادية
+                    </p>
+                    <button class="btn btn--secondary">تواصل معنا</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  CONTACTS SECTION END  -->
+
+<!-- FOOTER SECTION START -->
+<footer class="footer">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="">
+                    <img src="../assets/images/Home/logo.png" alt="Logo">
+                </a>
+                <ul class="social-links mt-4">
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <ul class="footer__list">
+                    <li class="footer__list__item">
+                        <a href="" class="footer__list__item__link heading-3">تواصل معنا</a>
+                    </li>
+                    <li class="footer__list__item">
+                        <a href="" class="footer__list__item__link heading-3">
+                            <i class="icon icon-Earth"></i>
+                            <span>
+                                    طريق أنس بن مالك - الملقا - الرياض 13521 - المملكة العربية السعودية
+                                </span>
+                        </a>
+                    </li>
+                    <li class="footer__list__item">
+                        <a href="" class="footer__list__item__link heading-3">
+                            <i class="icon icon-call"></i>
+                            <span class="d-inline-block">
+                                        +966 920000968
+                                </span>
+                        </a>
+                    </li>
+                    <li class="footer__list__item">
+                        <a href="" class="footer__list__item__link heading-3">
+                            <i class="icon icon-sms"></i>
+                            <span class="d-inline-block">
+                                    info@sca.sa
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <ul class="footer__list">
+                    <li class="footer__list__item">
+                        <a href="" class="footer__list__item__link heading-3">تحميل التطبيق</a>
+                    </li>
+                    <div class="footer__list__downloads">
+                        <li class="footer__list__item">
+                            <a href="" class="footer__list__item__link heading-3">
+                                <img src="../assets/images/Home/play_store.svg" alt="Google">
+                            </a>
+                        </li>
+                        <li class="footer__list__item">
+                            <a href="" class="footer__list__item__link heading-3">
+                                <img src="../assets/images/Home/apple_store.svg" alt="Apple">
+                            </a>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<div class="footer__copy-rights">
+    جميع الحقوق محفوظة (C) 2022الهيئة السعودية للمقاولين .
+</div>
+
+<!-- FOOTER SECTION END -->
+
+<script src="../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../assets/js/jquery.fancybox.min.js"></script>
+<script src="../assets/js/jquery.nice-select.min.js"></script>
+<script src="../assets/js/swiper.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="/../assets/js/wow.min.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+
+</html>

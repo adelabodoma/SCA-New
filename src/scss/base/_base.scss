@@ -35,3 +35,8 @@ a {
     text-decoration: underline!important;
   }
 }
+
+
+.text-right {
+  text-align: #{$left} !important;
+}

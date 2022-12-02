@@ -1,0 +1,50 @@
+.co-details {
+  &__date {
+    color: #646A69;
+    font-size: rem(14);
+    margin-bottom: 10px;
+    text-align: center;
+
+    &__icon {
+      color: #3EB562;
+      margin-inline-end: 5px;
+
+      &::before {
+        color: currentColor;
+      }
+    }
+  }
+
+  &__image {
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: rem(20);
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+  }
+
+  &__heading {
+    font-size: rem(15);
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.8;
+    display: block;
+  }
+
+  &__share-article {
+    @include flex(center, flex-start);
+    margin-top: 50px;
+
+    &__heading {
+      margin-bottom: 0;
+      margin-inline-end: 10px;
+    }
+  }
+}

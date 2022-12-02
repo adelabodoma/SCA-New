@@ -1,17 +1,28 @@
 .bg-white {
   background-color: $color-white;
 }
+.m-b-10 {
+  margin-bottom: 10px;
+}
 
 .m-b-20 {
   margin-bottom: 30px;
 }
 .m-b-30 {
-  margin-bottom: 30px;
+  margin-bottom: 30px!important;
 }
 
 
 .m-b-40 {
   margin-bottom: 40px;
+}
+
+.m-t-60 {
+  margin-top: 60px!important;
+}
+
+.m-b-60 {
+  margin-bottom: 60px!important;
 }
 
 .text-right {

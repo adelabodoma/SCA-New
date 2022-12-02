@@ -1,13 +1,12 @@
-.co-news {
-  display: flex;
-  margin-bottom: 60px;
+.co-event {
   @extend %animateCard;
   border-radius: 10px;
 
   &__image {
     border-radius: 10px;
     object-fit: cover;
-    max-height: 150px;
+    max-height: 200px;
+    width: 100%;
   }
 
   &__info {
