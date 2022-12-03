@@ -19,7 +19,9 @@
   }
 
   &__link {
-    text-decoration: underline;
+    //text-decoration: underline;
+    color: #434847;
+    font-weight: bold;
   }
 
   @include media-breakpoint-down(sm){
