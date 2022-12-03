@@ -20,11 +20,12 @@
 'components/main/list-card', 'components/main/director',
 'components/main/divider', 'components/main/site',
 'components/main/list', 'components/main/tabs', 'components/main/accordion',
-'components/main/page-details', 'components/main/event', 'components/main/album';
+'components/main/page-details', 'components/main/event', 'components/main/album', 'components/main/job', 'components/main/forms';
 
 // PAGES
 @import "pages/home", 'pages/about', 'pages/manager-word',
-'pages/chart', 'pages/program', 'pages/privacy', 'pages/contract', 'pages/vision', 'pages/functions', 'pages/news';
+'pages/chart', 'pages/program', 'pages/privacy', 'pages/contract',
+'pages/vision', 'pages/functions', 'pages/news', 'pages/contact_us';
 
 // LAYOUT
 @import "layout/header", "layout/footer";

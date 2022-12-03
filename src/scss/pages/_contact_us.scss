@@ -1,0 +1,9 @@
+.contact-us-page {
+  &__image {
+    max-height: 500px;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 30px;
+    }
+  }
+}
