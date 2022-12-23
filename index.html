@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
     <link rel="stylesheet" href="assets/css/style-rtl.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
     <title>SCA - Home</title>
 </head>
 
@@ -31,11 +33,22 @@
                   <a href="" class="header__nav__burger-button" id="openMenu">
                       <i class="icon icon-burger-menu"></i>
                   </a>
-
-                  <a href="" class="header__nav__language">
-                      <i class="icon icon-Earth"></i>
-                      <span>العربيه</span>
-                  </a>
+                  <div class="header__language-switcher header__nav__language">
+                      <a href="#" class="header__language-switcher__link"
+                         type="button" id="changeLang" data-toggle="dropdown" aria-haspopup="true"
+                         aria-expanded="false">
+                          <span class="header__language-switcher__link__label">العربية</span>
+                          <i class="icon icon-arrow_dropdown"></i>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="changeLang">
+                          <a class="dropdown-item" href="#">
+                              <span>عربي</span>
+                          </a>
+                          <a class="dropdown-item" href="#">
+                              <span>English</span>
+                          </a>
+                      </div>
+                  </div>
 
 
                   <a href="" class="header__nav__search">
@@ -75,9 +88,22 @@
                     <a href="" class="header__menu__nav__close-button" id="closeMenu">
                         <i class="icon icon-close"></i>
                     </a>
-                    <a href="" class="header__menu__nav__language">
-                        العربيه
-                    </a>
+                    <div class="header__language-switcher header__menu__nav__language">
+                        <a href="#" class="header__language-switcher__link"
+                           type="button" id="changeLang" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            <span class="header__language-switcher__link__label">العربية</span>
+                            <i class="icon icon-arrow_dropdown"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="changeLang">
+                            <a class="dropdown-item" href="#">
+                                <span>عربي</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span>English</span>
+                            </a>
+                        </div>
+                    </div>
 
                     <a href="" class="header__menu__nav__search">
                         البحث
@@ -99,15 +125,17 @@
                                     عن الهيئة
                                 </a>
                             </li>
-                            <li class="header__menu__nav__items__item">
+                            <li class="header__menu__nav__items__item header__menu__nav__items__item--nested">
                                 <a href="" class="header__menu__nav__items__item__link">
                                     الخطة الإستراتيجية
                                 </a>
+                                <i class="icon icon-arrow-Left_2"></i>
                             </li>
-                            <li class="header__menu__nav__items__item">
+                            <li class="header__menu__nav__items__item header__menu__nav__items__item--nested">
                                 <a href="" class="header__menu__nav__items__item__link">
                                     المركز الإعلامي
                                 </a>
+                                <i class="icon icon-arrow-Left_2"></i>
                             </li>
                             <li class="header__menu__nav__items__item">
                                 <a href="" class="header__menu__nav__items__item__link">
@@ -232,8 +260,8 @@
     <!--  WHY SCA SECTION START   -->
     <section class="why-sca">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 offset-lg-2 wow fadeInUp" data-wow-duration="1.6s">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-5 wow fadeInUp" data-wow-duration="1.6s">
                     <img class="why-sca__image" src="assets/images/Home/why-sca.png" alt="SCA">
                     <div class="why-sca__statistics">
                         <h2>15+</h2>
