@@ -1,4 +1,10 @@
 $left: left;
 $right: right;
 $direction: ltr;
+
+
+
+.icon-arrow-left1 {
+  transform: rotate(180deg);
+}
 @import './main';
