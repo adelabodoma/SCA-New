@@ -56,7 +56,7 @@ $nav-level4-background-color: $white;
 $nav-level5-background-color: $white;
 
 .co-mobile-menu {
-  //display: none;
+  display: none;
   min-width: 25%;
   ::-webkit-scrollbar-thumb {
     background: #EEEEEE;
@@ -65,8 +65,9 @@ $nav-level5-background-color: $white;
   ::-webkit-scrollbar-thumb:hover {
     background: #EEEEEE;
   }
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(lg){
     width: 100%;
+    display: block;
   }
   .nav {
     &-drill {
@@ -89,7 +90,7 @@ $nav-level5-background-color: $white;
     }
 
     &-item {
-      padding: 20px;
+      padding: 16px;
       //margin-bottom: 20px;
       &:not(:last-child) {
         border-bottom: 1px solid #EEEEEE;
@@ -100,8 +101,9 @@ $nav-level5-background-color: $white;
       display: block;
       background-color: $nav-background-color;
       color: $primary-color;
-      font-size: rem(20);
+      font-size: rem(16);
       font-weight: 500;
+      padding: 0;
     }
 
     &-expand {

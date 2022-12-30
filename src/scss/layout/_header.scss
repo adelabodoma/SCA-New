@@ -179,6 +179,7 @@
 
       &__items {
         margin-top: 100px;
+        position: relative;
 
         * {
           color: $text-color;
@@ -198,7 +199,7 @@
             }
           }
 
-          &:hover {
+          &:hover, &--active {
             background-color: #EEF4F4;
             cursor: pointer;
           }
@@ -207,7 +208,29 @@
             font-size: rem(20);
             font-weight: 500;
           }
+
+          //&:hover {
+          //  & + ul {
+          //    display: block;
+          //  }
+          //}
         }
+
+        &--nested {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 100%;
+          width: max-content;
+          margin-top: 0;
+          margin-inline-start: 30px;
+        }
+      }
+    }
+
+    &__desktop {
+      @include media-breakpoint-down(lg){
+        display: none;
       }
     }
   }

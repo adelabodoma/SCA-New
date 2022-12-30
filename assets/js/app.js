@@ -12,15 +12,27 @@ jQuery(document).ready(function ($) {
   })
 
 
-  $('#closeMenu').on('click', function (e){
+  $('#closeMenu').on('click', function (e) {
     e.preventDefault()
     $('.header__menu').css('top', ' -100%')
   })
 
 
-
   // RENDER MOBILE MENU
   mobileNavMenuRender();
+
+  $('.header__menu__nav__items__item--nested').on('click', function (e) {
+    e.preventDefault();
+    $('.header__menu__nav__items__item--active').removeClass('header__menu__nav__items__item--active')
+    $('.header__menu__nav__items--nested').hide()
+
+
+    setTimeout(() => {
+      $(this).toggleClass('header__menu__nav__items__item--active')
+      $(this).find('> ul.header__menu__nav__items--nested').show()
+    }, 10)
+
+  })
 
   const topButton = document.getElementById("gotToTopButton");
   const headerNav = document.querySelector(".header__mobile-nav");

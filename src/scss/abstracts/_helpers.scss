@@ -36,6 +36,12 @@
   }
 }
 
+.d-small-none{
+  @include media-breakpoint-down(sm){
+    display: none!important;
+  }
+}
+
 .no-padding {
   padding: 0!important;
 }
