@@ -1,8 +1,29 @@
 .co-album {
+  &__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: rem(40);
+    color: $color-white;
+  }
+
+  &__image-container {
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-color: rgba(0,0,0,.3);
+      content: "";
+      height: 97%;
+      border-radius: 10px;
+    }
+  }
   &__image {
     border-radius: 6px;
     width: 100%;
-    margin-bottom: 20px;
     max-height: 450px
   }
 
@@ -10,6 +31,7 @@
     font-size: rem(16);
     font-weight: 700;
     margin-bottom: 20px;
+    margin-top: 20px;
     display: block;
   }
 

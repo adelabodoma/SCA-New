@@ -35,6 +35,10 @@
       @include flex(center, flex-start)
     }
 
+    &__logo {
+      margin-inline-start: auto;
+    }
+
     &__search {
       display: flex;
       align-items: center;
@@ -175,6 +179,11 @@
 
       &__search {
         margin-inline-end: auto;
+      }
+
+      &__search-wrapper {
+        margin-inline-start: 60px;
+        display: flex;
       }
 
       &__items {
