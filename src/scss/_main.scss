@@ -11,7 +11,7 @@
 @import "abstracts/helpers";
 
 // COMPONENT
-@import "components/shared/social-links", "components/shared/scroll",
+@import "components/shared/social-links", "components/shared/scroll", "components/shared/mobile-menu",
 "components/shared/dropdown", "components/shared/buttons", "components/shared/tabs", "components/shared/multimedia", "components/shared/spinner",
 "components/main/member", "components/main/service",
 "components/main/news", "components/main/activity",
@@ -25,7 +25,7 @@
 // PAGES
 @import "pages/home", 'pages/about', 'pages/manager-word',
 'pages/chart', 'pages/program', 'pages/privacy', 'pages/contract',
-'pages/vision', 'pages/functions', 'pages/news', 'pages/contact_us';
+'pages/vision', 'pages/functions', 'pages/news', 'pages/contact_us', 'pages/graduates-opinions';
 
 // LAYOUT
 @import "layout/header", "layout/footer";

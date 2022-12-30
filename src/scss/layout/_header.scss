@@ -25,15 +25,21 @@
       align-items: center;
 
       i {
-        font-size: rem(18);
+        font-size: rem(15);
         margin-inline-end: 5px;
       }
     }
 
+    &__left {
+      margin-inline-start: auto;
+      @include flex(center, flex-start)
+    }
+
     &__search {
-      margin-inline-end: auto;
       display: flex;
       align-items: center;
+      margin-inline-end: auto;
+
 
       i {
         font-size: rem(18);
@@ -137,6 +143,7 @@
       display: flex;
       align-items: center;
       padding-top: 10px;
+      color: $text-color;
 
       * {
         color: $text-color;
@@ -184,7 +191,7 @@
 
           &--nested {
             @include flex(center, space-between);
-            background-color: #EEF4F4;
+            //background-color: #EEF4F4;
 
             .icon {
               font-size: rem(20);
