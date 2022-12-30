@@ -31,8 +31,10 @@ jQuery(document).ready(function ($) {
       $(this).toggleClass('header__menu__nav__items__item--active')
       $(this).find('> ul.header__menu__nav__items--nested').show()
     }, 10)
-
   })
+
+  // $("[aria-expanded='true'] .icon").removeClass('icon-add').addClass('icon-mins').css('font-size', '4px')
+  // $("[aria-expanded='true'] .icon")
 
   const topButton = document.getElementById("gotToTopButton");
   const headerNav = document.querySelector(".header__mobile-nav");
