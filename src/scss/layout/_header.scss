@@ -196,8 +196,8 @@
 
         &__item {
           border-bottom: 1px solid #EEEEEE;
-          padding: 20px;
-          margin-bottom: 20px;
+          padding: 15px 10px;
+          margin-bottom: 15px;
 
           &--nested {
             @include flex(center, space-between);

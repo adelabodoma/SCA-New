@@ -22,7 +22,16 @@ jQuery(document).ready(function ($) {
   mobileNavMenuRender();
 
   $('.header__menu__nav__items__item--nested').on('click', function (e) {
-    e.preventDefault();
+    var href = $(e.target).attr('href')
+    if (!href){
+      e.preventDefault();
+    }
+    console.log($(e.target).attr('href'))
+    // console.log(!$(this).getAttribute('href'))
+    // if(!$(this).getAttribute('href')){
+    //   e.preventDefault();
+    // }
+
     $('.header__menu__nav__items__item--active').removeClass('header__menu__nav__items__item--active')
     $('.header__menu__nav__items--nested').hide()
 
@@ -45,7 +54,7 @@ jQuery(document).ready(function ($) {
   };
 
 
-  // WOW JS 
+  // WOW JS
   wow = new WOW(
     {
       boxClass: 'wow',      // default
