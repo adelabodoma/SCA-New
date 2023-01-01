@@ -197,4 +197,19 @@
         text-align: center;
     }
 
+    @include media-breakpoint-down(sm){
+        padding: 20px;
+        &__top-header {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        &-header {
+            margin-top: 20px;
+            h2 {
+                font-size: rem(30);
+            }
+        }
+    }
+
 }

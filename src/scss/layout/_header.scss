@@ -178,12 +178,15 @@
       }
 
       &__search {
-        margin-inline-end: auto;
+        //margin-inline-end: auto;
       }
 
       &__search-wrapper {
-        margin-inline-start: 60px;
+        //margin-inline-start: 60px;
         display: flex;
+        //justify-content: center;
+        color: $text-color;;
+        margin-top: 20px;
       }
 
       &__items {
