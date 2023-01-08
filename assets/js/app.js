@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
 
   $('#closeMenu').on('click', function (e) {
     e.preventDefault()
-    $('.header__menu').css('top', ' -100%')
+    $('.header__menu').css('top', ' -105vh')
   })
 
 
